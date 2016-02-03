@@ -4,5 +4,8 @@
   "main": "main.js",
   "devDependencies": {
     "electron-prebuilt": "^0.33.6"
+  },
+  "scripts": {
+    "1s": "electron ."
   }
 }
