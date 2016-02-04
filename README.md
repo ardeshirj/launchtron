@@ -3,6 +3,7 @@
 Playing around with electron and Launchpad Novation
 
 ## To run
-```
+``` shel
 npm install
-./node_modules/.bin/electron .
+npm run 1s
+```
