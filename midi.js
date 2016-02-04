@@ -6,8 +6,9 @@ function onMIDISuccess(midiAccess) {
   console.log('MIDI ready!');
   midi = midiAccess;
 
-  listInputsAndOutputs();
-  startLoggingMIDIInput();
+  // listInputsAndOutputs();
+  monitorInput();
+  sendMessage();
 }
 
 function onMIDIFailure(msg) {
@@ -41,8 +42,17 @@ function onMIDIMessage(event) {
   console.log(str);
 }
 
-function startLoggingMIDIInput() {
-  midi.inputs.forEach(function (entry) {
-    entry.onmidimessage = onMIDIMessage;
+function monitorInput() {
+  // Each press/release is an input
+  midi.inputs.forEach(function (input) {
+    input.onmidimessage = onMIDIMessage;
+  });
+}
+
+function sendMessage() {
+  // Message format: [note-type(on/off), key(0xColRow), velocity(color)]
+  var message = [0x80, 0x70, 0x7f];
+  midi.outputs.forEach(function (output) {
+    output.send(message);
   });
 }
