@@ -38,7 +38,7 @@ One of the ways to make the LEDs flash:
 - Enable flashing mode in launchpad by sending `[0xB0, 0x00, 0x28]` message
 - Unset `copy` and set `clear` bits in velocity
 
-Example: [0x90, 0x70, **0x0B**] (0x0B = 0000**10**11)
+Example: [0x90, 0x70, **0x0B**] where 0x0B = 0000**10**11
 
 Note:
 You can disable the flashing mode by sending `[0xB0, 0x00, 0x20]` message
