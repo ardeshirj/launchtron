@@ -23,10 +23,10 @@ The format for launchpad midi message is:
   - Col: 0-8 (Including circle keys)
 
 
-- Velocity format: 00XXYYZZ]
-  - XX: Green brightness
-  - YY: Copy/Clear bits
-  - ZZ: Red brightness
+- Velocity format: 00XXY2Y1ZZ]
+  - XX:   Green brightness bits
+  - Y1Y2: Copy(Y1) & Clear(Y2) bits
+  - ZZ:   Red brightness bits
 
 For example [0x90, 0x70, 0x3C] is a message to
 - turn on (0x90)
