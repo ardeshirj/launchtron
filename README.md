@@ -25,7 +25,7 @@ The format for launchpad midi message is:
 
 - Velocity format: 00XXY2Y1ZZ]
   - XX:   Green brightness bits
-  - Y1Y2: Copy(Y1) & Clear(Y2) bits
+  - Y2Y1: Copy(Y1) & Clear(Y2) bits
   - ZZ:   Red brightness bits
 
 For example [0x90, 0x70, 0x3C] is a message to
