@@ -50,8 +50,7 @@ function monitorInput() {
 }
 
 function sendMessage() {
-  // Message format: [note-type(on/off), key(0xColRow), velocity(color)]
-  var message = [0x80, 0x70, 0x7f];
+  var message = [0x80, 0x70, 0x3F];
   midi.outputs.forEach(function (output) {
     output.send(message);
   });
