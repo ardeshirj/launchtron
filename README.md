@@ -31,4 +31,12 @@ The format for launchpad midi message is:
 For example [0x90, 0x70, 0x3C] is a message to
 - turn on (0x90)
 - the first column and last row key (0x70)
-- full brightness in Green (00111100 = 0x3C)
+- full brightness in green (00111100 = 0x3C)
+
+### LED Flashing
+One of the ways to make the LEDs flash:
+- Enable flashing mode in launchpad by sending `[0xB0, 0x00, 0x28]` message
+- Set `clear` and unset `copy` bits in velocity
+
+Note:
+You can disable the flashing mode by sending `[0xB0, 0x00, 0x20]` message
