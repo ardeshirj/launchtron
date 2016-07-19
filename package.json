@@ -1,12 +1,29 @@
 {
   "name": "launchtron",
   "version": "0.1.0",
-  "main": "main.js",
-  "devDependencies": {
-    "bootstrap": "^3.3.6",
-    "electron-prebuilt": "^0.33.6"
-  },
+  "description": "ElectronJS + Novation Launchpad",
+  "main": "index.js",
   "scripts": {
-    "1s": "electron ."
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardeshirj/launchtron.git"
+  },
+  "keywords": [
+    "electron",
+    "Launchpad"
+  ],
+  "author": "Ardeshir Javaherchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ardeshirj/launchtron/issues"
+  },
+  "homepage": "https://github.com/ardeshirj/launchtron#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  },
+  "dependencies": {
+    "electron-prebuilt": "^1.2.7"
   }
 }
