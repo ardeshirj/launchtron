@@ -1,8 +1,8 @@
 # Launchtron
 
-Playing around with electron and Launchpad Novation
+Playing around with Electron + Reactivex + Launchpad Novation
 
-## To run
+## Getting Started
 ``` shel
 npm install
 npm start
