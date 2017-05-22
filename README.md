@@ -1,4 +1,4 @@
-# Launchtron
+# Reactron 
 
 Playing around with Electron + Reactivex + Launchpad Novation
 

@@ -1,5 +1,5 @@
 {
-  "name": "launchtron",
+  "name": "Reactron",
   "version": "0.1.0",
   "description": "ElectronJS + Novation Launchpad",
   "main": "main.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ardeshirj/launchtron.git"
+    "url": "git+https://github.com/ardeshirj/reactron.git"
   },
   "keywords": [
     "electron",
@@ -17,9 +17,9 @@
   "author": "Ardeshir Javaherchi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ardeshirj/launchtron/issues"
+    "url": "https://github.com/ardeshirj/reactron/issues"
   },
-  "homepage": "https://github.com/ardeshirj/launchtron#readme",
+  "homepage": "https://github.com/ardeshirj/reactron#readme",
   "dependencies": {
     "bootstrap": "^3.3.6",
     "electron": "^1.6.6",
