@@ -30,10 +30,13 @@ const outputObs = midiObs
 const outputSub = inputObs
   .combineLatest(outputObs, (input, output) => {
     if (input[2] === 0) {
-      output.send([input[0], input[1], 0x00]);
+      // Turn off the led on release (velocity === 0)
+      output.send([0x80, input[1], 0x00]);
+      return `Sent output: ${[0x80, input[1], 0x00]}`;
     } else {
+      // Turn on the led with green color on press
       output.send([input[0], input[1], 0x3C]);
+      return `Sent output: ${[input[0], input[1], 0x3C]}`;
     }
-    return `Sent output: ${[input[0], input[1], 0x3C]}`;
   })
   .subscribe(sent => console.log(sent));
